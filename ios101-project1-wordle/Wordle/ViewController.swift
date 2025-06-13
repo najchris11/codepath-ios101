@@ -37,6 +37,8 @@ class ViewController: UIViewController {
               self.boardController.enter(input)
           }
       }
+      
+//      print(WordGenerator.generateRandomWord())
     // END YOUR CODE HERE
   }
 }
