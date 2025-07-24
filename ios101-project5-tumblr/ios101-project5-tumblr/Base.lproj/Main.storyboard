@@ -29,18 +29,28 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="314-ZN-T5m">
-                                                    <rect key="frame" x="266" y="11" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="314-ZN-T5m">
+                                                    <rect key="frame" x="136" y="19" width="245" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zHO-Tk-NGH">
-                                                    <rect key="frame" x="-55" y="-43" width="240" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zHO-Tk-NGH">
+                                                    <rect key="frame" x="8" y="8" width="120" height="27"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="120" id="y2j-e5-7T8"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zHO-Tk-NGH" firstAttribute="top" secondItem="ru0-Ki-7d7" secondAttribute="top" constant="8" id="5P5-Dc-QTn"/>
+                                                <constraint firstItem="314-ZN-T5m" firstAttribute="top" secondItem="ru0-Ki-7d7" secondAttribute="topMargin" constant="8" id="8hJ-wc-WP4"/>
+                                                <constraint firstItem="314-ZN-T5m" firstAttribute="bottom" secondItem="ru0-Ki-7d7" secondAttribute="bottomMargin" constant="8" id="CBI-Hh-SiI"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="314-ZN-T5m" secondAttribute="trailing" constant="-8" id="Zrv-8c-RPO"/>
+                                                <constraint firstItem="zHO-Tk-NGH" firstAttribute="leading" secondItem="ru0-Ki-7d7" secondAttribute="leading" constant="8" id="cfz-4U-Tvn"/>
+                                                <constraint firstItem="314-ZN-T5m" firstAttribute="leading" secondItem="zHO-Tk-NGH" secondAttribute="trailing" constant="8" id="el6-iB-bbs"/>
+                                                <constraint firstAttribute="bottom" secondItem="zHO-Tk-NGH" secondAttribute="bottom" constant="8" id="l9W-kB-8Xp"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="postPicture" destination="zHO-Tk-NGH" id="Jzl-3v-JVf"/>
