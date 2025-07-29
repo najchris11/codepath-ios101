@@ -19,3 +19,6 @@
 [submodule "ios101-prework"]
 	path = ios101-prework
 	url = https://github.com/najchris11/CodePath-Prework
+[submodule "ios101-project7-task"]
+	path = ios101-project7-task
+	url = https://github.com/najchris11/ios101-project7-task
