@@ -122,19 +122,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHn-Gl-lJF">
-                                <rect key="frame" x="325" y="309" width="44" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVh-0X-Oi4">
+                                <rect key="frame" x="302" y="289" width="75" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="2" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="heart" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24"/>
-                                </state>
-                                <state key="selected" image="heart.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="didTapFavoriteButton:" destination="H2z-Jj-psh" eventType="touchUpInside" id="jU6-E5-op7"/>
-                                </connections>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="o95-lt-8HL"/>
@@ -143,7 +135,7 @@
                     <navigationItem key="navigationItem" title="Movie Details" largeTitleDisplayMode="never" id="V2m-Yj-CJe"/>
                     <connections>
                         <outlet property="backdropImageView" destination="deP-SK-iIR" id="1c7-4Q-0sj"/>
-                        <outlet property="favoriteButton" destination="QHn-Gl-lJF" id="8my-qL-aay"/>
+                        <outlet property="favoriteButton" destination="SVh-0X-Oi4" id="mHE-cv-K1U"/>
                         <outlet property="overviewTextView" destination="QMb-Q3-L8A" id="6oZ-ng-34y"/>
                         <outlet property="posterImageShadowView" destination="XPC-qI-pi0" id="Ye9-wc-tCT"/>
                         <outlet property="posterImageView" destination="eFS-JQ-YzC" id="5cH-02-Oo3"/>
@@ -270,8 +262,6 @@
         <segue reference="E9M-SY-9f1"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="heart" catalog="system" width="128" height="107"/>
-        <image name="heart.fill" catalog="system" width="128" height="107"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -280,9 +270,6 @@
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
