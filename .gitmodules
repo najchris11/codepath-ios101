@@ -10,3 +10,6 @@
 [submodule "ios101-project3-trivia"]
 	path = ios101-project3-trivia
 	url = https://github.com/najchris11/ios101-project3-trivia
+[submodule "ios101-project2-wordle"]
+	path = ios101-project2-wordle
+	url = https://github.com/najchris11/ios101-project2-wordle
