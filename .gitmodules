@@ -1,3 +1,6 @@
 [submodule "ios101-project6-tumblr"]
 	path = ios101-project6-tumblr
 	url = https://github.com/najchris11/ios101-project6-tumblr.git
+[submodule "ios101-project5-tumblr"]
+	path = ios101-project5-tumblr
+	url = https://github.com/najchris11/ios101-project5-tumblr.git
